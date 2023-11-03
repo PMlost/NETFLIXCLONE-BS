@@ -133,19 +133,19 @@ form .form-floating > .form-control:focus ~ label::after {
   --bs-accordion-border-radius: none;
 }
 
-.faq-section .accordion-item:first-of-type .accordion-button {
+/* .faq-section .accordion-item:first-of-type .accordion-button {
   border-bottom-left-radius: 0;
   border-top-right-radius: 0;
-}
+} */
 
 .faq-section .accordion-button:focus {
   border: none;
   box-shadow: none;
 }
 
-.faq-section .accordion-button:hover {
+/* .faq-section .accordion-button:hover {
   background-color: rgb(65, 65, 65);
-}
+} */
 
 .faq-section .accordion-button:not(collapsed) {
   background-color: rgb(65, 65, 65);
@@ -165,7 +165,7 @@ form .form-floating > .form-control:focus ~ label::after {
 .faq-section .accordion-button:not(collapsed)::after {
   background-image: none;
   transform: none;
-  content: "\00d7";
+  /* content: "\00d7"; */
 }
 
 /* footer */
@@ -260,6 +260,10 @@ footer .language-btn {
   }
 
   .faq-section button {
-    font-size: 18px;
+    font-size: 15px;
+  }
+
+  .watch-section .section-title {
+    font-size: 2.5rem;
   }
 }

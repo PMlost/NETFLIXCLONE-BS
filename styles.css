@@ -1,0 +1,265 @@
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/header-image.png);
+  background-size: cover;
+  background-position: center;
+
+  /* padding: 10px 8%; */
+  height: 100vh;
+}
+
+nav img {
+  width: 150px;
+
+  /* width: 13%; */
+}
+.red-btn {
+  border: 0;
+  outline: 0;
+  padding: 7px 20px;
+  background: rgb(229, 9, 20);
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.red-btn:hover {
+  background: rgb(120, 7, 13);
+}
+
+/* hero-section */
+.hero-title {
+  font-size: 3rem;
+
+  font-weight: 900;
+}
+
+.hero-first-p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero-second-p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+form {
+  /* width: 60%; */
+  /* //veno */
+}
+
+form .form-floating {
+  width: 50%;
+}
+
+form label {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+}
+
+form #floatinginput {
+  background: transparent;
+  color: #fff;
+}
+
+form .form-control:focus {
+  border-color: #fff;
+  box-shadow: none;
+  border-width: medium;
+}
+
+form .form-floating > .form-control:focus ~ label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+form .form-floating > .form-control:focus ~ label::after {
+  background-color: transparent;
+}
+
+.get-started-btn {
+  height: 60px;
+  font-size: 1.5rem;
+
+  padding: 0 25px;
+}
+
+.get-started-btn::after {
+  content: "\276F";
+  margin-left: 5px;
+}
+
+/* enjoy-section */
+.section-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.section-paragraph {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.watch-section,
+.download-section {
+  border-top: 6px solid #232323;
+  border-bottom: 5px solid #232323;
+}
+
+/* FAQ ACCORDION  */
+.faq-section h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.faq-section button {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.faq-section .accordion {
+  --bs-accordion-color: rgb(255, 255, 255);
+  --bs-accordion-bg: rgb(45, 45, 45);
+  --bs-accordion-border-color: none;
+  --bs-accordion-border-radius: none;
+}
+
+.faq-section .accordion-item:first-of-type .accordion-button {
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.faq-section .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.faq-section .accordion-button:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+.faq-section .accordion-button:not(collapsed) {
+  background-color: rgb(65, 65, 65);
+  color: rgb(255, 255, 255);
+}
+
+.faq-section .accordion-button::after {
+  content: "+";
+  background-image: none;
+  position: absolute;
+  height: 30px;
+  font-size: 50px;
+  top: 5px;
+  right: 45px;
+}
+
+.faq-section .accordion-button:not(collapsed)::after {
+  background-image: none;
+  transform: none;
+  content: "\00d7";
+}
+
+/* footer */
+
+footer {
+  border-top: 5px solid #232323;
+}
+
+footer p,
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li a {
+  text-decoration: none;
+}
+
+footer .language-btn {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 7px 10px;
+  color: #fff;
+}
+
+.footer-img {
+  width: 10px;
+  margin-left: 10px;
+}
+
+/* media queries */
+@media only screen and (max-width: 992px) {
+  nav img {
+    width: 22%;
+  }
+
+  .hero-title,
+  section-title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .hero-first-p,
+  .hero-second-p,
+  .section-paragraph,
+  .faq-section h3 {
+    font-size: 1.125rem;
+  }
+
+  .enjoy-section .container {
+    padding-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav img {
+    width: 25%;
+  }
+  header {
+    /* height: 100vh; */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  nav img {
+    width: 20%;
+  }
+
+  header {
+    height: 110vh;
+  }
+
+  form .form-floating {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 333px) {
+  body {
+    width: 101%;
+  }
+
+  .faq-section button {
+    font-size: 18px;
+  }
+}
